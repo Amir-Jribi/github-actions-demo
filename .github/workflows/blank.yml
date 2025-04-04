@@ -44,4 +44,4 @@ jobs:
         run: echo $PWD
         
       - name: run the regression test
-        run: reframe --config-file=config.py -c hpl.py -r
+        run: reframe --config-file=config.py -c hpl.py -c osu_bw.py -r
