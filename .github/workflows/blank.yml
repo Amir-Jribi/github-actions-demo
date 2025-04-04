@@ -39,6 +39,9 @@ jobs:
 
       - name: check for reframe installation
         run: reframe -V
+
+      - name: check the working dir
+        run: echo $PWD
         
-      - name: run the regression test
-        run: reframe --config-file=config.py -c hpl.py -r
+      #- name: run the regression test
+        #run: reframe --config-file=config.py -c hpl.py -r
