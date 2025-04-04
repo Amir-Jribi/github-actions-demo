@@ -5,7 +5,7 @@ import reframe.utility.sanity as sn
 class HPLTest(rfm.RunOnlyRegressionTest):
     descr="Reframe HPL Test on compute Node"
     valid_systems=["my_cluster:compute_hpl"]
-    valid_prog_environs=["intel"]
+    valid_prog_environs=["intel_hpl"]
     #sourcesdir = '/home/amir.jribi-ext/use-reframe/hpl_test'
     sourcesdir = '/home/amir.jribi-ext/benchmarks/hpl/mp_linpack'
     reference={
