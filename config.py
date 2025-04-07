@@ -18,6 +18,12 @@ site_configuration = {
                     'launcher': 'mpirun',
                     'environs': ['intel_osu'],
                 },
+                {
+                    'name': 'compute_stream',
+                    'scheduler': 'slurm',
+                    'launcher': 'local',
+                    'environs': ['intel_stream'],
+                },
             ]
         }
     ],
@@ -36,7 +42,14 @@ site_configuration = {
             'ftn': 'ifort',  # intel Fortran compiler
             'modules' : ['intel-compilers/2022.2.0'  ,
             ' impi/2021.7.0-intel-compilers-2022.2.0'],
-    }
+    },
+     {
+            'name': 'intel_stream',  # intel environment
+            'cc': 'icc',  # intel C compiler
+            'cxx': 'icpc',  # intel C++ compiler
+            'ftn': 'ifort',  # intel Fortran compiler
+            'modules' : ['intel-compilers/2022.2.0'],
+    },
   ]
 }
 

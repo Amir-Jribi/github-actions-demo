@@ -11,7 +11,12 @@ class StreamTest(rfm.RegressionTest):
  
     descr="Reframe Stream Test on compute Node"
     valid_systems=["my_cluster:compute_stream"]    
-    valid_prog_environs=["intel"]
+    valid_prog_environs=["intel_stream"]
+     reference={
+        'my_cluster:compute_stream':{
+            'triad_bw':(20000,-0.1,0.1,'MB/s')
+        }
+    }
     num_threads = 56
     affinity = 'compact'
     @run_before('run')
