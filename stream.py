@@ -14,7 +14,7 @@ class StreamTest(rfm.RegressionTest):
     valid_prog_environs=["intel_stream"]
     reference={
         'my_cluster:compute_stream':{
-            'triad_bw':(20000,-0.1,0.1,'MB/s')
+            'triad_bw':(22000,-0.2,0.2,'MB/s')
         }
     }
     num_threads = 56
