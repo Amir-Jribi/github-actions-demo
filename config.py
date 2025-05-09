@@ -24,6 +24,12 @@ site_configuration = {
                     'launcher': 'local',
                     'environs': ['intel_stream'],
                 },
+                {
+                    'name': 'compute_env',
+                    'scheduler': 'slurm',
+                    'launcher': 'local',
+                    'environs': ['default'],
+                },
             ]
         }
     ],
@@ -49,6 +55,12 @@ site_configuration = {
             'cxx': 'icpc',  # intel C++ compiler
             'ftn': 'ifort',  # intel Fortran compiler
             'modules' : ['intel-compilers/2022.2.0'],
+    },
+    {
+            'name': 'default',
+            'cc': '',
+            'cxx': '',
+            'ftn': '',
     },
   ]
 }
