@@ -44,4 +44,4 @@ jobs:
         run: echo $PWD
         
       - name: run the regression test
-        run: reframe --config-file=config.py -c osu_bw.py -c stream.py -c filesystem.py -r
+        run: reframe --config-file=config.py -c osu_bw.py -c stream.py -c filesystem.py -c slurmcheck.py -r
